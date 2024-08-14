@@ -1,76 +1,81 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 195 31% 95%;
+    --foreground: 200 41% 26%;
 
-  @layer base {
-    :root {
-      --background: 0 0% 100%;
-      --foreground: 224 71.4% 4.1%;
+    --card: 195 31% 95%;
+    --card-foreground: 200 41% 26%;
+ 
+    --popover: 195 31% 95%;
+    --popover-foreground: 200 41% 26%;
+ 
+    --primary: 200 41% 26%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 193 25% 38%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 200 41% 26%;
+    --muted-foreground: 200 41% 60%;
+ 
+    --accent: 193 37% 48%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
 
-      --card: 0 0% 100%;
-      --card-foreground: 224 71.4% 4.1%;
-
-      --popover: 0 0% 100%;
-      --popover-foreground: 224 71.4% 4.1%;
-
-      --primary: 220.9 39.3% 11%;
-      --primary-foreground: 210 20% 98%;
-
-      --secondary: 220 14.3% 95.9%;
-      --secondary-foreground: 220.9 39.3% 11%;
-
-      --muted: 220 14.3% 95.9%;
-      --muted-foreground: 220 8.9% 46.1%;
-
-      --accent: 220 14.3% 95.9%;
-      --accent-foreground: 220.9 39.3% 11%;
-
-      --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 210 20% 98%;
-
-      --border: 220 13% 91%;
-      --input: 220 13% 91%;
-      --ring: 224 71.4% 4.1%;
-
-      --radius: 0.5rem;
-    }
-
-    .dark {
-      --background: 224 71.4% 4.1%;
-      --foreground: 210 20% 98%;
-
-      --card: 224 71.4% 4.1%;
-      --card-foreground: 210 20% 98%;
-
-      --popover: 224 71.4% 4.1%;
-      --popover-foreground: 210 20% 98%;
-
-      --primary: 210 20% 98%;
-      --primary-foreground: 220.9 39.3% 11%;
-
-      --secondary: 215 27.9% 16.9%;
-      --secondary-foreground: 210 20% 98%;
-
-      --muted: 215 27.9% 16.9%;
-      --muted-foreground: 217.9 10.6% 64.9%;
-
-      --accent: 215 27.9% 16.9%;
-      --accent-foreground: 210 20% 98%;
-
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 210 20% 98%;
-
-      --border: 215 27.9% 16.9%;
-      --input: 215 27.9% 16.9%;
-      --ring: 216 12.2% 83.9%;
-    }
+    --border: 200 41% 26%;
+    --input: 200 41% 26%;
+    --ring: 200 41% 26%;
+ 
+    --radius: 0.5rem;
   }
-
-  @layer base {
-    * {
-      @apply border-border;
-    }
-    body {
-      @apply bg-background text-foreground;
-    }
+ 
+  .dark {
+    --background: 200 41% 26%;
+    --foreground: 195 31% 95%;
+ 
+    --card: 200 41% 26%;
+    --card-foreground: 195 31% 95%;
+ 
+    --popover: 200 41% 26%;
+    --popover-foreground: 195 31% 95%;
+ 
+    --primary: 195 31% 95%;
+    --primary-foreground: 200 41% 26%;
+ 
+    --secondary: 193 25% 38%;
+    --secondary-foreground: 195 31% 95%;
+ 
+    --muted: 195 31% 95%;
+    --muted-foreground: 195 31% 60%;
+ 
+    --accent: 193 37% 48%;
+    --accent-foreground: 195 31% 95%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 195 31% 95%;
+ 
+    --border: 195 31% 95%;
+    --input: 195 31% 95%;
+    --ring: 195 31% 95%;
   }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-raleway;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-space font-bold;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Raleway&family=Open+Sans&display=swap');

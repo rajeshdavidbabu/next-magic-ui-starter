@@ -25,8 +25,11 @@ const config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#1B4D6A",
+          light: "#5B8A9A",
+          lighter: "#5BA2C2",
+          lightest: "#A8D4E1",
+          bg: "#E7F5F8",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -52,6 +55,11 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      fontFamily: {
+        spaceMono: ["Space Mono", "monospace"],
+        raleway: ["Raleway", "sans-serif"],
+        openSans: ["Open Sans", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

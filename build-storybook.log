@@ -1,0 +1,32 @@
+
+> magic-ui-next@0.1.0 build-storybook
+> storybook build --output-dir /var/folders/dj/gxz7n4d92rsf1sn5nhw2p0sw0000gn/T/chromatic--75204-L4TJvvJWICsy --webpack-stats-json /var/folders/dj/gxz7n4d92rsf1sn5nhw2p0sw0000gn/T/chromatic--75204-L4TJvvJWICsy
+
+storybook v8.2.9
+
+info => Cleaning outputDir: ../../../../../../var/folders/dj/gxz7n4d92rsf1sn5nhw2p0sw0000gn/T/chromatic--75204-L4TJvvJWICsy
+info => Loading presets
+WARN Could not resolve addon "@storybook/addon-onboarding", skipping. Is it installed?
+WARN Could not resolve addon "@storybook/addon-onboarding", skipping. Is it installed?
+info => Building manager..
+info => Manager built (143 ms)
+info => Building preview..
+WARN No story files found for the specified pattern: stories/**/*.mdx
+info => Using implicit CSS loaders
+info => Using SWC as compiler
+info => Using default Webpack5 setup
+WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+WARN This can impact web performance.
+WARN Assets: 
+WARN   504.bc8fa13e.iframe.bundle.js (1.32 MiB)
+WARN   49.6c7ad85f.iframe.bundle.js (395 KiB)
+WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+WARN Entrypoints:
+WARN   main (1.38 MiB)
+WARN       runtime~main.9282d349.iframe.bundle.js
+WARN       504.bc8fa13e.iframe.bundle.js
+WARN       main.9237e3d4.iframe.bundle.js
+WARN 
+info => Preview built (4.62 s)
+info => preview stats written to /var/folders/dj/gxz7n4d92rsf1sn5nhw2p0sw0000gn/T/chromatic--75204-L4TJvvJWICsy/preview-stats.json
+info => Output directory: /var/folders/dj/gxz7n4d92rsf1sn5nhw2p0sw0000gn/T/chromatic--75204-L4TJvvJWICsy
